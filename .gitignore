@@ -1,0 +1,5 @@
+node_modules
+*.sh
+demo.ts
+.env
+dist
