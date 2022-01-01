@@ -11,6 +11,9 @@
     "notion2markdown",
     "notion2blog"
   ],
+  "files": [
+    "dist"
+  ],
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "dependencies": {
@@ -23,5 +26,13 @@
   "scripts": {
     "prepublish": "tsc"
   },
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arpitBhalla/notion2mdblog.git"
+  },
+  "bugs": {
+    "url": "https://github.com/arpitBhalla/notion2mdblog/issues"
+  },
+  "homepage": "https://github.com/arpitBhalla/notion2mdblog#readme"
 }
