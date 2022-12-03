@@ -1,8 +1,12 @@
 import { Client } from "@notionhq/client";
+import { ClientOptions } from "@notionhq/client/build/src/Client";
 import json2md from "json2md";
 import { block2markdown } from "./convert";
 
 export class Notion2markdownClient extends Client {
+  constructor(options?: ClientOptions) {
+    super(options);
+  }
   private getBlocks = async ({ block_id }: { block_id: string }) => {
     const blocks = await this.blocks.children.list({ block_id });
     return blocks.results;
